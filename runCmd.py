@@ -19,7 +19,7 @@ while True:
         # Run "setbg" command as a subprocess and store exit code in exitCode
         # Ref- https://stackabuse.com/executing-shell-commands-with-python/
         # Ref- https://docs.python.org/3/library/subprocess.html
-        exitCode = run(["setbg"])
+        exitCode = run(["echo", "TEST"])
     except Exception as e:
         print(e)
         break
