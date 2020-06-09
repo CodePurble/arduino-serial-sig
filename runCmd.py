@@ -16,7 +16,7 @@ while True:
         # characters by directly printing out ser_bytes)
         signal = ser_bytes[0:len(ser_bytes) - 2].decode('utf-8')
 
-        # Run "setbg" command as a subprocess and store exit code in exitCode
+        # Run "echo TEST" command as a subprocess and store exit code in exitCode
         # Ref- https://stackabuse.com/executing-shell-commands-with-python/
         # Ref- https://docs.python.org/3/library/subprocess.html
         exitCode = run(["echo", "TEST"])
